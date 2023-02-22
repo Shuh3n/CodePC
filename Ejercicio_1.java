@@ -15,34 +15,19 @@ public class Ejercicio_1 {
 
 		System.out.println("Los conjuntos ingresados son: ");
 
-		System.out.println(A);
-		System.out.println(B);
+		imprimir("El conjunto A es:    " + A + "\n" + "\nEl conjunto B es:    " + B);
+
+
 
 		ArrayList<Integer> union = calcularUnion(A, B);
 		ArrayList<Integer> interseccion = calcularInterseccion(A, B);
 		ArrayList<Integer> diferencia = calcularDiferenciaSi(A, B);
 
-		imprimir("prueba" + union);
-
-
-
-
-
-
-		System.out.println("La union entre los conjuntos es: " + union);
-		System.out.println("La intersección entre los conjuntos es: " + interseccion);
-		System.out.println("La direfencia simetrica entre los conjuntos es: " + diferencia);
-
-		
-
-
-
+		imprimir("La union entre los conjuntos es: " + union + "\nLa intersección entre los conjuntos es: " + interseccion 
+		+ "\nLa diferencia simetrica entre los conjuntos es: " + diferencia);
 
 	}
-	
-	
-	
-	
+
 	public static ArrayList<Integer> crearConjunto(int num){
 		ArrayList<Integer> conjunto = new ArrayList<>();
 		
@@ -107,13 +92,6 @@ public class Ejercicio_1 {
 
 	}
 
-	public static void ordenarBurbuja(ArrayList<Integer> miA){
-		
-	}
-	
-		
-		
-	
 
 	public static int leerInt(String mensaje) {
 		int dato = Integer.parseInt(JOptionPane.showInputDialog(mensaje));
@@ -123,7 +101,6 @@ public class Ejercicio_1 {
 	public static void imprimir(String mensaje) {
 		JOptionPane.showMessageDialog(null, mensaje);
 		
-
 	}
 	
 	public static boolean verificarContenencia(int num, ArrayList<Integer> con) {
@@ -135,27 +112,10 @@ public class Ejercicio_1 {
 		return cent;
 		
 }
-	public static void imprimirArray(String mensaje , ArrayList<Integer> miA){
-		String array = "[";
-		String mensajet = "";
 
-		for(int i = 0 ; i< miA.size() ; i++){
-			int num = miA.get(i);
-			array += num;
-			
-		}
-		array += "]"; 
-
-		mensajet += mensaje + array;
-		JOptionPane.showMessageDialog(null, mensaje);
 
 
 		
-		
+}
 
-
-
-
-	}
-
-}	
+	
