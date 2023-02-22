@@ -13,9 +13,9 @@ public class Ejercicio_1 {
 		int num2 = leerInt("Ingrese el cardinal del conjunto B: ");
 		ArrayList<Integer> B = crearConjunto(num2);
 
-		System.out.println("Los conjuntos ingresados son: ");
+		
 
-		imprimir("El conjunto A es:    " + A + "\n" + "\nEl conjunto B es:    " + B);
+		imprimir("Los conjuntos ingresados son" + "\nEl conjunto A es:    " + A + "\n" + "\nEl conjunto B es:    " + B);
 
 
 
